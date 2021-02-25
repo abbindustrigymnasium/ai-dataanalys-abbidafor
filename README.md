@@ -14,3 +14,5 @@ install numpy
 ```
 pip install numpy
 ```
+
+återkommer om vilka filer som är intressanta
