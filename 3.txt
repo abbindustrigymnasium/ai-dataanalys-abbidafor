@@ -1,2 +1,0 @@
-Man kan analysera värden i en graf visuelt och då hitta värden som är 
-orimliga genom att analysera amplituder, frekvenser och medelvärden.
