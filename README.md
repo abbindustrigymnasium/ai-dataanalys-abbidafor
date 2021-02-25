@@ -2,15 +2,15 @@
 
 install pip
 ```
-$ python get-pip.py
+python get-pip.py
 ```
 
 install matplotlib
 ```
-$ python -m pip install -U matplotlib
+python -m pip install -U matplotlib
 ```
 
 install numpy
 ```
-$ pip install numpy
+pip install numpy
 ```
