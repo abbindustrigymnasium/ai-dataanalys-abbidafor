@@ -1,5 +1,7 @@
 # Data Analys
 
+#1 INSTALLATION 
+
 install pip
 ```
 python get-pip.py
