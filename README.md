@@ -1,6 +1,6 @@
 # Data Analys
 
-## INSTALLATION 
+### Installation
 
 install pip
 ```
