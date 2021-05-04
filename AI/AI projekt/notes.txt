@@ -1,0 +1,28 @@
+ai-projekt
+CHESSBOT
+
+pip install chess
+
+
+brädan
+spelpjäser
+röra spelpjäserna
+regler - aka schakmatt, schack, vart man inte kan gå osv.
+AI - räknar ut det bästa draget
+om hinns med:
+	välja vit eller svart
+	det blir svårare och svårare ju mer man spelar, den lär sig
+	
+	
+planering 
+04-20: göra brädan och få fram pjäser
+04-27: moving the pieces
+04-27: logik för bonden 
+04-27: logik för tornet
+04-28: logik för springaren
+04-28: logik för löparen
+
+problem
+	kod
+		fil läsning
+		P inte P
