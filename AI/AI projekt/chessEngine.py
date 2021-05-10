@@ -4,7 +4,7 @@ This class is responsible for storing all the information about the current stat
 
 class GameState():
     def __init__(self):
-        # board is 8x82d list, each element of the list has 2 characters
+        # board is 8x8 2d list, each element of the list has 2 characters
         # the first character represents the color of the piece, 'b' or 'w'
         # the second character represents the type of the piece, 'K', 'Q', 'R', 'B', 'N' or 'P'
         # '--' represents an empty space with no piece
@@ -67,27 +67,27 @@ class GameState():
     All moves considering checks
     '''
     def getValidMoves(self):
-        #1.) generate all possible moves
+        # #1.) generate all possible moves
         moves = self.getAllPossibleMoves()
-        #2.) for each move, make the move
-        for i in range(len(moves)-1, -1, -1): # when removing from a list go backwards through that list
-            self.makeMove(moves[i])
-            #3.) generate all opponent's moves
-            #4.) for each of your opponent's moves, see if they attack your king
-            self.whiteToMove = not self.whiteToMove
-            if self.inCheck():
-                #5.) if they do attack your king not a valid move
-                moves.remove(moves[i])
-            self.whiteToMove = not self.whiteToMove
-            self.undoMove()
-        if len(moves) == 0: # either checkmate or stalemate
-            if self.inCheck():
-                self.checkMate = True
-            else:
-                self.staleMate = True
-        else:
-            self.checkMate = False
-            self.staleMate = False
+        # #2.) for each move, make the move
+        # for i in range(len(moves)-1, -1, -1): # when removing from a list go backwards through that list
+        #     self.makeMove(moves[i])
+        #     #3.) generate all opponent's moves
+        #     #4.) for each of your opponent's moves, see if they attack your king
+        #     self.whiteToMove = not self.whiteToMove
+        #     if self.inCheck():
+        #         #5.) if they do attack your king not a valid move
+        #         moves.remove(moves[i])
+        #     self.whiteToMove = not self.whiteToMove
+        #     self.undoMove()
+        # if len(moves) == 0: # either checkmate or stalemate
+        #     if self.inCheck():
+        #         self.checkMate = True
+        #     else:
+        #         self.staleMate = True
+        # else:
+        #     self.checkMate = False
+        #     self.staleMate = False
        
         return moves
 
